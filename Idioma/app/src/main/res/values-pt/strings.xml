@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txtIdioma">Idioma</string>
+    <string name="txtMenu">Menu</string>
+    <string name="txtSair">Sair</string>
+</resources>
