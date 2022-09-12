@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:backgroundTint="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <!-- Text View Referente ao título "Calculadora"-->
+    <TextView
+        android:id="@+id/txtCalculadora"
+        android:layout_width="194dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="502dp"
+        android:scrollbarSize="30dp"
+        android:text=" Calculadora"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Edit Text View entrada do valor do número 1 -->
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="360dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="416dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Digite o número 1"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <!-- Edit Text View entrada do valor do número 2 -->
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="360dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="374dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Digite o número 2"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <!-- Text View para exibição do resultado -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="360dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:text="O Resultado ....."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColorLink="#673AB7"
+        android:textSize="25sp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Button que realiza a Função de Somar -->
+
+    <!-- Button que realiza a Função de Subtrair -->
+
+    <Button
+        android:id="@+id/btnSomar"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="somar"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Button que realiza a Função de Dividir -->
+
+    <!-- Button que realiza a Função de multiplicar -->
+
+    <!-- Button que realiza a Função de Mod -->
+
+    <Button
+        android:id="@+id/btnSubtrair"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="subtrair"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="dividir"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="multiplicar"
+        android:text="x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnMod"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="mod"
+        android:text="%(mod)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button que realiza a Função de Potência -->
+
+    <!-- Button que realiza a Função de Limpar -->
+
+    <Button
+        android:id="@+id/btnPotencia"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="potencia"
+        android:text="n1^n2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="limpar"
+        android:text="Limpar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
