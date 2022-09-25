@@ -4,7 +4,7 @@
 
 - Trabalhar com expressões formadas pela entrada dos números e os operadores.
 
-  
+ https://user-images.githubusercontent.com/85805420/192157955-5e83b144-d3cf-46e6-b774-5cbded5588ec.mp4
 
-  
+
 
