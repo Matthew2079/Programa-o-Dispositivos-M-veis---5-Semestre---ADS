@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Título -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="CARDS DE REVISÃO"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#AC0000" />
+
+    </LinearLayout>
+
+    <!-- Card 1 -->
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:flipDuration="400"
+        app:flipEnabled="true"
+        app:flipFrom="left"
+        app:flipOnTouch="true"
+        app:flipType="horizontal"
+        android:layout_marginTop="20dp">
+
+        <!--Layout para o verso do Card-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtCard1V"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta: Washington"
+                android:textAlignment="center"
+                android:textColor="#FFFEFE"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <!--Layout para a Frente do Card-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#AC0000"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtCard1F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qual a capital dos EUA?"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <!-- Card 2 -->
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:flipDuration="400"
+        app:flipEnabled="true"
+        app:flipFrom="left"
+        app:flipOnTouch="true"
+        app:flipType="horizontal"
+        android:layout_marginTop="20dp">
+
+        <!--Layout para o verso do Card-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtCard2V"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta: Strenghts / Weaknesses / Opportunities / Threats"
+                android:textAlignment="center"
+                android:textColor="#FFFEFE"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <!--Layout para a Frente do Card-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#AC0000"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtCard2F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O que significa SWOT?"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <!-- Card 3 -->
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:flipDuration="400"
+        app:flipEnabled="true"
+        app:flipFrom="left"
+        app:flipOnTouch="true"
+        app:flipType="horizontal"
+        android:layout_marginTop="20dp">
+
+        <!--Layout para o verso do Card-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtCard3V"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta: Y^X (mod p)"
+                android:textAlignment="center"
+                android:textColor="#FFFEFE"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <!--Layout para a Frente do Card-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#AC0000"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtCard3F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qual a função modular de criptografia Diffie e Hellman?"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <!-- Card 4 -->
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:flipDuration="400"
+        app:flipEnabled="true"
+        app:flipFrom="left"
+        app:flipOnTouch="true"
+        app:flipType="horizontal"
+        android:layout_marginTop="20dp">
+
+        <!--Layout para o verso do Card-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#000000"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtCard4V"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resposta: Instruções SQL organizadas para executar tarefas"
+                android:textAlignment="center"
+                android:textColor="#FFFEFE"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <!--Layout para a Frente do Card-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="#AC0000"
+            android:gravity="center"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtCard4F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para que utilizar a PROCEDURE?"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</LinearLayout>
+
+
+
